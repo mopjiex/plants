@@ -73,6 +73,8 @@ ul li {
 
 img {
   vertical-align: top;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -320,6 +322,119 @@ body {
 @media (max-width: 380px) {
   .about__text {
     width: 290px;
+  }
+}
+
+.service {
+  background-color: #edf2ec;
+  padding-top: 35px;
+  padding-bottom: 120px;
+}
+.service__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 160px;
+  margin-bottom: 100px;
+}
+.service__title {
+  width: 306px;
+  font-size: 40px;
+  line-height: 52px;
+  color: #499a18;
+}
+.service__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 38px;
+}
+.service__btn {
+  width: 161px;
+  border: 1px solid #e06733;
+  border-radius: 5px;
+  color: #e06733;
+  padding: 12px 40px;
+}
+.service__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 55px 110px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.service__box {
+  width: 330px;
+  border: 1px solid #e3e1d5;
+  border-radius: 20px;
+  padding-bottom: 36px;
+}
+.service__box-img {
+  margin-bottom: 10px;
+}
+.service__box-title {
+  text-align: center;
+  font-weight: 700;
+  color: #e06733;
+  margin-bottom: 10px;
+}
+.service__box-text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 125%;
+  color: #717171;
+}
+@media (max-width: 1000px) {
+  .service__top {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px 0;
+    margin-bottom: 40px;
+  }
+  .service__buttons {
+    gap: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .service__title {
+    width: 306px;
+    font-size: 35px;
+    line-height: 46px;
+  }
+  .service__box {
+    width: 280px;
+  }
+  .service__box-img {
+    width: 280px;
+  }
+  .service__box-img img {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .service__title {
+    width: 261px;
+  }
+  .service__buttons {
+    gap: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .service__inner {
+    gap: 34px 0;
   }
 }
 

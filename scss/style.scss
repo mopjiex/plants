@@ -73,6 +73,7 @@ ul li {
 
 img {
     vertical-align: top;
+    object-fit: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -327,6 +328,119 @@ body {
     @media(max-width: 380px) {
         &__text {
             width: 290px;
+        }
+    }
+}
+
+.service {
+    background-color: #edf2ec;
+    padding-top: 35px;
+    padding-bottom: 120px;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        gap: 0 160px;
+        margin-bottom: 100px;
+    }
+
+    &__title {
+        width: 306px;
+        font-size: 40px;
+        line-height: 52px;
+        color: #499a18;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 0 38px;
+    }
+
+    &__btn {
+        width: 161px;
+        border: 1px solid #e06733;
+        border-radius: 5px;
+        color: #e06733;
+        padding: 12px 40px;
+    }
+
+    &__inner {
+        display: flex;
+        gap: 55px 110px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__box {
+        width: 330px;
+        border: 1px solid #e3e1d5;
+        //border-top-left-radius: 20px;
+        //border-top-right-radius: 20px;
+        border-radius: 20px;
+        padding-bottom: 36px;
+        &-img {
+            margin-bottom: 10px;
+        }
+
+        &-title {
+            text-align: center;
+            font-weight: 700;
+            color: #e06733;
+            margin-bottom: 10px;
+        }
+
+        &-text {
+            text-align: center;
+            font-size: 16px;
+            line-height: 125%;
+            color: #717171
+        }
+    }
+
+    @media(max-width: 1000px) {
+        &__top {
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 40px 0;
+            margin-bottom: 40px; 
+        }
+
+        &__buttons {
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        &__title {
+            width: 306px;
+            font-size: 35px;
+            line-height: 46px;
+        }
+
+        &__box {
+            width: 280px;
+            &-img {
+                & img {
+                    width: 100%;
+                }
+                width: 280px;
+                
+            }
+        }
+    }
+
+    @media(max-width: 400px) {
+
+        &__title {
+            width: 261px;
+        }
+
+        &__buttons {
+            gap: 10px;
+            justify-content: center;
+            
+        }
+
+        &__inner {
+            gap: 34px 0;
         }
     }
 }
